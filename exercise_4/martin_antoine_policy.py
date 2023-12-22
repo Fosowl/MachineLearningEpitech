@@ -6,8 +6,11 @@ epsilon = 0.2
 
 def martin_antoine_policy(agent: Agent) -> str:
     """
-    Policy of the agent
-    return "left", "right", or "none"
+    Policy de l'agent
+    La policy de l'agent utilise une Q-table pour se souvenir des récompenses.
+    Une valeur epsilon de 0.2 est utilisée pour déterminer si l'agent doit explorer ou exploiter.
+    L'agent explore donc 20% du temps son environnement.
+    La Q-table est déclarée dans le constructeur de l'agent, dans agent.py
     """
     actions = ["left", "right", "none"]
     action = "none"
