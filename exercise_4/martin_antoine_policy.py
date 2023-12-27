@@ -10,7 +10,8 @@ def martin_antoine_policy(agent: Agent) -> str:
     La policy de l'agent utilise une Q-table pour se souvenir des récompenses.
     Une valeur epsilon de 0.2 est utilisée pour déterminer si l'agent doit explorer ou exploiter.
     L'agent explore donc 20% du temps son environnement.
-    La Q-table est déclarée dans le constructeur de l'agent, dans agent.py
+    La Q-table est déclarée dans le constructeur de l'agent, dans agent.py.
+    Une fonction update_Q y est également présente pour mettre a jour la Q table.
     """
     actions = ["left", "right", "none"]
     action = "none"
